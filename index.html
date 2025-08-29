@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LeadScale - Landing Pages sur-mesure</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Écran de chargement -->
+    <div id="loading-screen" class="loading-screen">
+        <div class="loading-content">
+            <div class="loading-logo">
+                <img src="Logo triangle.png" alt="LeadScale" class="loading-logo-img">
+            </div>
+            <div class="loading-bar-container">
+                <div class="loading-bar"></div>
+            </div>
+            <div class="loading-text">
+                <span class="loading-word">
+                    <span class="letter">C</span>
+                    <span class="letter">h</span>
+                    <span class="letter">a</span>
+                    <span class="letter">r</span>
+                    <span class="letter">g</span>
+                    <span class="letter">e</span>
+                    <span class="letter">m</span>
+                    <span class="letter">e</span>
+                    <span class="letter">n</span>
+                    <span class="letter">t</span>
+                </span>
+                <span class="loading-dots">
+                    <span class="dot">.</span>
+                    <span class="dot">.</span>
+                    <span class="dot">.</span>
+                </span>
+                <span class="loading-percentage">0%</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contenu principal -->
+    <div id="main-content" class="main-content">
+        <!-- Navigation -->
+        <nav class="navbar">
+            <div class="nav-logo">
+                <img src="Logo triangle.png" alt="LeadScale" class="header-logo">
+            </div>
+            <div class="nav-container">
+                <ul class="nav-menu">
+                    <li><a href="#accueil">LeadScale</a></li>
+                    <li><a href="#offre">Nous rejoindre</a></li>
+                    <li><a href="#methode">Processus</a></li>
+                    <li><a href="#faq">F.A.Q</a></li>
+                </ul>
+            </div>
+            <button class="nav-cta" onclick="window.open('https://calendly.com/callwebsam/call-web', '_blank')">Réserver mon appel</button>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+
+        <!-- Section Hero -->
+        <section id="accueil" class="hero">
+            <div class="hero-container">
+                <div class="hero-content">
+                    <div class="hero-infos">
+                        <div class="hero-badge">2 places restantes pour ce mois-ci</div>
+                    </div>
+                    <h1 class="hero-title" id="animated-title">Transformez votre trafic<br>en clients</h1>
+                    <div class="hero-text">
+                        <p class="hero-subtitle">Chaque clic perdu, c'est un client qui va chez votre concurrent.</p>
+                        <p class="hero-system">Un système installé en 7 jours pour atteindre +30% sur ton taux de conversion.</p>
+                        <button class="cta-button" onclick="window.open('https://calendly.com/callwebsam/call-web', '_blank')">Je veux plus de conversions</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Nous rejoindre -->
+        <section id="offre" class="nous-rejoindre">
+            <div class="glow-overlay"></div>
+            <div class="dark-glow"></div>
+            <div class="container">
+                <h2 class="section-title">Parlons de ton projet</h2>
+                <div class="calendly-container">
+                    <!-- Début de widget en ligne Calendly -->
+                    <div class="calendly-inline-widget" data-url="https://calendly.com/callwebsam/call-web" style="min-width:600px;height:700px;"></div>
+                    <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+                    <!-- Fin de widget en ligne Calendly -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Réalisation -->
+        <section id="realisation" class="realisation">
+            <div class="container">
+                <div class="title-cta">Et si...</div>
+                <h2 class="section-title">Et si chaque visiteur devenait un client ?</h2>
+                <div class="realisation-content">
+                    <div class="realisation-text">
+                        <p>Tu fais des efforts pour ramener des gens vers ton offre mais s'ils repartent sans acheter, ça ne sert à rien.</p>
+                        <p>⭢ Un tunnel, c'est comme un GPS il guide chaque visiteur pas à pas jusqu'à devenir client. Sans lui, ton trafic n'est qu'une foule qui passe, tu perds des clients et de l'argent.</p>
+                    </div>
+                    <div class="funnel-diagram">
+                        <div class="funnel-image-container">
+                            <img src="schéma tunnel.png" alt="Schéma tunnel de conversion" class="funnel-image">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section Méthode -->
+        <div class="section-cta">
+            <div class="cta-badge">Notre Process</div>
+        </div>
+        
+        <!-- Section Méthode -->
+        <section id="methode" class="methode">
+            <div class="container">
+                <h2 class="section-title">Notre méthode en 3 étapes simples</h2>
+                <div class="methode-steps">
+                    <div class="step-line">
+                        <div class="step-circle step-1 active" onclick="showStep(1)">
+                            <span class="step-number">1</span>
+                        </div>
+                        <div class="step-circle step-2" onclick="showStep(2)">
+                            <span class="step-number">2</span>
+                        </div>
+                        <div class="step-circle step-3" onclick="showStep(3)">
+                            <span class="step-number">3</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="methode-content">
+                    <div class="step-content step-1-content active">
+                        <div class="step-visual">
+                            <div class="step-icon">
+                                <svg width="50" height="50" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <circle cx="11" cy="11" r="8"/>
+                                    <path d="m21 21-4.35-4.35"/>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="step-text">
+                            <h3>Analyse de votre situation</h3>
+                            <p>Nous commençons par un audit précis de votre activité et de vos objectifs afin de comprendre vos besoins réels et identifier les leviers de croissance.</p>
+                        </div>
+                        <div class="step-navigation">
+                            <button class="next-step-btn" onclick="showStep(2)">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                    <path d="M9 18L15 12L9 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <div class="step-content step-2-content">
+                        <div class="step-visual">
+                            <div class="step-icon">
+                                <svg width="50" height="50" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M12 2L2 7l10 5 10-5-10-5z"/>
+                                    <path d="M2 17l10 5 10-5"/>
+                                    <path d="M2 12l10 5 10-5"/>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="step-text">
+                            <h3>Création de votre landing page</h3>
+                            <p>Nous concevons une page sur-mesure, pensée pour capter l'attention, séduire vos prospects et transformer vos visiteurs en clients.</p>
+                        </div>
+                        <div class="step-navigation step-navigation-double">
+                            <button class="prev-step-btn" onclick="showStep(1)">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                    <path d="M15 18L9 12L15 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </button>
+                            <button class="next-step-btn" onclick="showStep(3)">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                    <path d="M9 18L15 12L9 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <div class="step-content step-3-content">
+                        <div class="step-visual">
+                            <div class="step-icon">
+                                <svg width="50" height="50" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M3 3v18h18"/>
+                                    <path d="M7 17l3-3 2 2 7-7"/>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="step-text">
+                            <h3>Optimisation et suivi</h3>
+                            <p>Nous mesurons les performances, ajustons chaque détail et assurons un suivi continu pour maximiser vos résultats dans la durée.</p>
+                        </div>
+                        <div class="step-navigation">
+                            <button class="prev-step-btn" onclick="showStep(2)">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                    <path d="M15 18L9 12L15 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section FAQ -->
+        <div class="section-cta">
+            <div class="cta-badge">F.A.Q.</div>
+        </div>
+        
+        <!-- Section FAQ -->
+        <section id="faq" class="faq">
+            <div class="container">
+                <h2 class="section-title">Vos questions, nos réponses</h2>
+                <div class="faq-container">
+                    <div class="faq-item">
+                        <div class="faq-question" onclick="toggleFAQ(1)">
+                            <h3>Combien de temps faudra-t-il pour que ma landing page soit prête et opérationnelle ?</h3>
+                            <div class="faq-icon">
+                                <span class="plus">+</span>
+                            </div>
+                        </div>
+                        <div class="faq-answer" id="faq-answer-1">
+                            <p>Tout dépend de la compléxité de la tache mais généralement entre 3 à 7 jours.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question" onclick="toggleFAQ(2)">
+                            <h3>Comment être sûr que ma landing page va réellement convertir plus que ma page actuelle ?</h3>
+                            <div class="faq-icon">
+                                <span class="plus">+</span>
+                            </div>
+                        </div>
+                        <div class="faq-answer" id="faq-answer-2">
+                            <p>Nos landing pages sont conçues 100% pour convertir : copywriting orienté action, design qui guide le prospect et CTA unique. En moyenne, nos clients voient leurs conversions x3 à x5 par rapport à leur page actuelle.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question" onclick="toggleFAQ(3)">
+                            <h3>Est-ce que je devrai fournir beaucoup de contenu ou de design moi-même ?</h3>
+                            <div class="faq-icon">
+                                <span class="plus">+</span>
+                            </div>
+                        </div>
+                        <div class="faq-answer" id="faq-answer-3">
+                            <p>Non. Nous créons tout pour vous : copywriting, design et structure. Vous n'avez qu'à fournir les infos essentielles sur votre offre, le reste est pris en charge par notre équipe.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question" onclick="toggleFAQ(4)">
+                            <h3>Quel retour sur investissement puis-je attendre avec une landing page optimisée ?</h3>
+                            <div class="faq-icon">
+                                <span class="plus">+</span>
+                            </div>
+                        </div>
+                        <div class="faq-answer" id="faq-answer-4">
+                            <p>Une landing page bien optimisée transforme votre trafic en clients. Même un petit trafic qualifié peut générer plusieurs milliers d'euros de chiffre d'affaires supplémentaire par mois selon votre offre et votre volume de visiteurs.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Nous rejoindre (dupliquée) -->
+        <section id="offre-duplicate" class="nous-rejoindre">
+            <div class="glow-overlay"></div>
+            <div class="dark-glow"></div>
+            <div class="container">
+                <h2 class="section-title">Parlons de ton projet</h2>
+                <div class="calendly-container">
+                    <!-- Début de widget en ligne Calendly -->
+                    <div class="calendly-inline-widget" data-url="https://calendly.com/callwebsam/call-web" style="min-width:600px;height:700px;"></div>
+                    <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+                    <!-- Fin de widget en ligne Calendly -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-content">
+                    <div class="footer-left">
+                        <span class="built-by">Built by @LeadScale</span>
+                    </div>
+                    <div class="footer-center">
+                        <div class="footer-logo">
+                            <h2>LeadScale</h2>
+                        </div>
+                    </div>
+                    <div class="footer-right">
+                        <a href="https://www.linkedin.com/in/samuel-b-81279a2a4" class="linkedin-link" target="_blank">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+    
+    <!-- Bulle WhatsApp -->
+    <div class="whatsapp-bubble" onclick="openWhatsApp()">
+        <svg width="35" height="35" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.885 3.488"/>
+        </svg>
+    </div>
+    
+</body>
+</html> 
